@@ -1,0 +1,63 @@
+/**
+ * Cartesian representation. This program was made to test Heritage capacity
+ * 
+ * @author Pierre Belisle
+ * @version %1%,%0% (3/5/2020)
+ *
+ */
+public class Point2D 
+{
+	private double x;
+	private double y;
+	
+	public Point2D() 
+	{
+		x=0;
+		y=0;
+	}
+	
+	public Point2D(double x, double y) 
+	{
+		
+		this.x = x;
+		this.y = y;
+		
+	}
+	
+	public Point2D(Point2D p) 
+	{
+		
+		this (p.x,p.y);
+		
+	}
+	
+	public double getX() 
+	{
+		
+		return x;
+	}
+	
+	public double getY() 
+	{
+		
+		return y;
+	}
+	
+	public void setX(double x) 
+	{
+		
+		this.x = x;
+	}
+	
+	public void setY(double y) 
+	{
+		
+		this.y = y;
+	}
+	
+	public boolean equals (Point2D p) 
+	{
+		
+		return x == p.x && y == p.y;
+	}
+}
